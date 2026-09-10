@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sento Ramen — Autentico ramen giapponese in Via Cenisio 13, Milano. Brodi fatti in casa, chashu, gyoza e mochi in un'atmosfera che profuma di Tokyo.">
+  <meta name="keywords" content="ramen, Milano, cucina giapponese, Sento Ramen, Via Cenisio, chashu, tonkotsu, miso">
+  <meta name="author" content="Sento Ramen">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sento Ramen — Ristorante Giapponese a Milano">
+  <meta property="og:description" content="Ramen artigianale nel cuore di Milano, Via Cenisio 13. Prenota il tuo tavolo.">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:locale" content="it_IT">
+
+  <!-- Schema.org for Restaurant -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Sento Ramen",
+    "image": "img/facciata-locale-mascotte.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Cenisio 13",
+      "addressLocality": "Milano",
+      "postalCode": "20154",
+      "addressCountry": "IT"
+    },
+    "telephone": "+390249770189",
+    "servesCuisine": "Japanese",
+    "priceRange": "€€",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "31"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "12:00",
+        "closes": "15:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "19:00",
+        "closes": "23:00"
+      }
+    ]
+  }
+  </script>
+
+  <title>Sento Ramen — Ristorante Giapponese | Via Cenisio 13, Milano</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- speed-line hero backdrop, reused via CSS ::before on .speedlines -->
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__inner">
+
+      <a href="#hero" class="navbar__logo">
+        <span class="navbar__logo-kanji">千都</span>
+        <span class="navbar__logo-text">SENTO<em>RAMEN</em></span>
+      </a>
+
+      <div class="navbar__links" id="nav-links">
+        <a href="#hero" class="navbar__link" data-i18n="nav.home">Home</a>
+        <a href="#storia" class="navbar__link" data-i18n="nav.about">La Storia</a>
+        <a href="#menu" class="navbar__link" data-i18n="nav.menu">Menu</a>
+        <a href="#recensioni" class="navbar__link" data-i18n="nav.reviews">Recensioni</a>
+        <a href="#dove-siamo" class="navbar__link" data-i18n="nav.hours">Dove Siamo</a>
+        <a href="#prenota" class="navbar__link" data-i18n="nav.booking">Prenota</a>
+
+        <div class="navbar__utility">
+          <!-- Language Switcher -->
+          <div class="lang-switch">
+            <button class="lang-btn active" data-lang="it" aria-label="Italiano" title="Italiano">
+              <span class="lang-btn__flag">🇮🇹</span>
+            </button>
+            <button class="lang-btn" data-lang="en" aria-label="English" title="English">
+              <span class="lang-btn__flag">🇬🇧</span>
+            </button>
+          </div>
+
+          <!-- Designer credit seal (compact) -->
+          <a class="nav-credit" href="mailto:fiorel2709@gmail.com?subject=RICHIESTA%20INFORMAZIONI%20PER%20SITO" title="Website designed by Leonardo Fiore" aria-label="Website designed by Leonardo Fiore">
+            <span class="mono"><span>L</span><span>F</span></span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hamburger Menu -->
+      <button class="navbar__hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </nav>
+
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="img/ramen-chashu.jpg"
+           alt="Ciotola di ramen chashu di Sento Ramen, con maiale, uovo marinato e alga nori"
+           loading="eager">
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__halftone" aria-hidden="true"></div>
+    <div class="hero__speedlines" aria-hidden="true"></div>
+
+    <span class="hero__sticker hero__sticker--1" aria-hidden="true" data-i18n="hero.sticker1">熱々!</span>
+    <span class="hero__sticker hero__sticker--2" aria-hidden="true" data-i18n="hero.sticker2">ずるずる〜</span>
+
+    <div class="hero__content">
+      <span class="hero__badge" data-i18n="hero.badge">✦ Dal cuore di Tokyo a Milano ✦</span>
+      <h1 class="hero__title">
+        <span class="hero__title-kanji" aria-hidden="true">千都拉麺</span>
+        <span data-i18n="hero.title">SENTO RAMEN</span>
+      </h1>
+      <p class="hero__description" data-i18n="hero.description">
+        Brodo che sobbolle da ore, noodles al dente, chashu che si scioglie in bocca. Un pezzo di Giappone in Via Cenisio, per chi il ramen lo vive come una scena di manga.
+      </p>
+      <div class="hero__actions">
+        <a href="#prenota" class="btn btn--primary" data-i18n="hero.cta">Prenota un Tavolo</a>
+        <a href="#menu" class="btn btn--outline" data-i18n="hero.cta2">Scopri il Menu</a>
+      </div>
+      <div class="hero__ratings">
+        <span class="hero__rating-pill">⭐ <strong>4,9</strong>/5 <span data-i18n="hero.google">Google · 998 recensioni</span></span>
+        <span class="hero__rating-pill">🦉 <strong>4,7</strong>/5 <span data-i18n="hero.tripadvisor">Tripadvisor · 31 recensioni</span></span>
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint">
+      <span data-i18n="hero.scroll">Scorri</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       STORIA / ABOUT SECTION
+       ============================================================ -->
+  <section class="section" id="storia">
+    <div class="container">
+      <div class="about__grid">
+
+        <div class="about__image-wrapper reveal reveal--left">
+          <img class="about__image"
+               src="img/facciata-locale-mascotte.jpg"
+               alt="Facciata di Sento Ramen in Via Cenisio a Milano, con la mascotte disegnata in stile manga in vetrina"
+               loading="lazy">
+          <div class="about__image-accent"></div>
+          <span class="about__panel-tag" data-i18n="about.tag">店</span>
+        </div>
+
+        <div class="about__content reveal reveal--right">
+          <span class="about__label" data-i18n="about.label">La Nostra Storia</span>
+          <h2 class="about__title" data-i18n="about.title">Un angolo di Giappone, disegnato come un manga</h2>
+          <p class="about__text" data-i18n="about.text1">
+            Da Sento Ramen il rito del ramen è un piccolo racconto illustrato: lanterne rosse accese, l'onda di Hokusai sul muro, il vapore che sale da ogni ciotola come in una tavola di manga. Ogni brodo — miso, soia o tantanmen — nasce da ore di cottura lenta, per un piatto che scalda e racconta una storia.
+          </p>
+          <p class="about__text about__quote" data-i18n="about.text2">
+            "Location artefatta che richiama una tipica locanda giapponese... uno dei ramen più buoni di Milano." — Recensione Tripadvisor
+          </p>
+
+          <div class="about__features">
+            <div class="about__feature">
+              <div class="about__feature-icon">🍜</div>
+              <span class="about__feature-text" data-i18n="about.feature1">Brodo Fatto in Casa</span>
+            </div>
+            <div class="about__feature">
+              <div class="about__feature-icon">🔥</div>
+              <span class="about__feature-text" data-i18n="about.feature2">Chashu Cotto Lentamente</span>
+            </div>
+            <div class="about__feature">
+              <div class="about__feature-icon">🏮</div>
+              <span class="about__feature-text" data-i18n="about.feature3">Atmosfera da Tokyo</span>
+            </div>
+            <div class="about__feature">
+              <div class="about__feature-icon">🥢</div>
+              <span class="about__feature-text" data-i18n="about.feature4">Ricette Autentiche</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       MENU SCROLL-REVEAL SECTION
+       ============================================================ -->
+  <section class="section section--dark" id="menu">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-kicker" data-i18n="menu.kicker">拉麺</span>
+        <h2 class="section-title section-title--light" data-i18n="menu.title">Il Nostro Ramen</h2>
+        <div class="divider">
+          <span class="divider__line"></span>
+          <span class="divider__icon">🍥</span>
+          <span class="divider__line"></span>
+        </div>
+        <p class="section-subtitle section-subtitle--light" data-i18n="menu.subtitle">
+          Scorri piano: ogni ciotola si svela una alla volta, come le tavole di un manga. Ecco alcuni dei piatti che trovi davvero nel nostro menu.
+        </p>
+      </div>
+
+      <div class="dish-scroll">
+
+        <article class="dish-card reveal">
+          <div class="dish-card__frame">
+            <img src="img/ramen-chashu.jpg" alt="Chashu Ramen di Sento Ramen con maiale, uovo marinato, naruto e alga nori" loading="lazy">
+            <span class="dish-card__price">11€</span>
+          </div>
+          <h3 class="dish-card__title" data-i18n="menu.item1.title">Chashu Ramen</h3>
+          <p class="dish-card__desc" data-i18n="menu.item1.desc">Brodo miso, fette di maiale brasato, uovo marinato, naruto, alga nori, cipollotto e sesamo.</p>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-card__frame">
+            <img src="img/ramen-manzo.jpg" alt="Ramen Gyu di Sento Ramen con manzo giapponese, uovo e mais" loading="lazy">
+            <span class="dish-card__price">12€</span>
+          </div>
+          <h3 class="dish-card__title" data-i18n="menu.item2.title">Gyu Ramen</h3>
+          <p class="dish-card__desc" data-i18n="menu.item2.desc">Ramen con manzo giapponese bollito, verdure, alga nori, funghi, uovo, mais e cipollotto.</p>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-card__frame">
+            <img src="img/ramen-yasai.jpg" alt="Yasai Ramen vegetariano di Sento Ramen con naruto, mais, uovo e alga nori" loading="lazy">
+            <span class="dish-card__price">9€</span>
+          </div>
+          <h3 class="dish-card__title" data-i18n="menu.item3.title">Yasai Ramen</h3>
+          <p class="dish-card__desc" data-i18n="menu.item3.desc">La versione vegetariana: solo verdure di stagione, funghi, uovo, mais, naruto e alga nori.</p>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-card__frame">
+            <img src="img/calamari-fritti.jpg" alt="Calamari fritti croccanti di Sento Ramen, uno degli antipasti più popolari" loading="lazy">
+            <span class="dish-card__price">4€</span>
+          </div>
+          <h3 class="dish-card__title" data-i18n="menu.item4.title">Calamari Fritti</h3>
+          <p class="dish-card__desc" data-i18n="menu.item4.desc">Uno dei piatti più richiesti del locale: calamari impanati e fritti, croccanti fuori e teneri dentro.</p>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-card__frame">
+            <img src="img/pollo-fritto.jpg" alt="Pollo fritto croccante di Sento Ramen con salsa agrodolce" loading="lazy">
+            <span class="dish-card__price">5€</span>
+          </div>
+          <h3 class="dish-card__title" data-i18n="menu.item5.title">Pollo Fritto</h3>
+          <p class="dish-card__desc" data-i18n="menu.item5.desc">Bocconcini di pollo impanati e fritti, serviti con salsa agrodolce della casa.</p>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-card__frame">
+            <img src="img/mochi.jpg" alt="Mochi giapponesi al matcha e al cocco di Sento Ramen" loading="lazy">
+            <span class="dish-card__price" data-i18n="menu.item6.badge">Dolce</span>
+          </div>
+          <h3 class="dish-card__title" data-i18n="menu.item6.title">Mochi</h3>
+          <p class="dish-card__desc" data-i18n="menu.item6.desc">Il finale perfetto: morbidi mochi giapponesi al tè matcha e al cocco.</p>
+        </article>
+
+      </div>
+
+      <div class="menu__note reveal" data-i18n="menu.note">
+        ✦ Scegli il tuo brodo: MISO (originale), SOIA (speziato salato) o TANTANMEN (speziato piccante) — qui sotto il menu completo esposto in locale ✦
+      </div>
+
+      <div class="menu__board reveal">
+        <img src="img/menu-completo-locale.jpg" alt="Il menu completo di Sento Ramen con tutti i piatti e i prezzi" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       ATMOSPHERE GALLERY
+       ============================================================ -->
+  <section class="section" id="galleria">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-kicker" data-i18n="gallery.kicker">店内</span>
+        <h2 class="section-title" data-i18n="gallery.title">L'Atmosfera</h2>
+        <div class="divider">
+          <span class="divider__line"></span>
+          <span class="divider__icon">🏮</span>
+          <span class="divider__line"></span>
+        </div>
+        <p class="section-subtitle" data-i18n="gallery.subtitle">
+          Lanterne rosse, l'onda di Hokusai, legno scuro: un piccolo pezzo di Giappone a due passi da Via Cenisio.
+        </p>
+      </div>
+
+      <div class="gallery__grid reveal-stagger">
+        <div class="gallery__item gallery__item--tall">
+          <img src="img/sala-onda-hokusai.jpg" alt="Sala interna di Sento Ramen con murale dell'onda di Hokusai e lanterne rosse" loading="lazy">
+          <span class="gallery__caption" data-i18n="gallery.cap1">La Sala Principale</span>
+        </div>
+        <div class="gallery__item">
+          <img src="img/interno-lanterne.jpg" alt="Lanterne rosse giapponesi appese al soffitto di Sento Ramen" loading="lazy">
+          <span class="gallery__caption" data-i18n="gallery.cap2">Lanterne e Atmosfera</span>
+        </div>
+        <div class="gallery__item">
+          <img src="img/facciata-locale-mascotte.jpg" alt="Facciata di Sento Ramen in Via Cenisio a Milano" loading="lazy">
+          <span class="gallery__caption" data-i18n="gallery.cap3">In Via Cenisio 13</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       REVIEWS SECTION
+       ============================================================ -->
+  <section class="section section--cream" id="recensioni">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-kicker" data-i18n="reviews.kicker">評判</span>
+        <h2 class="section-title" data-i18n="reviews.title">Cosa Dicono di Noi</h2>
+        <div class="divider">
+          <span class="divider__line"></span>
+          <span class="divider__icon">💬</span>
+          <span class="divider__line"></span>
+        </div>
+      </div>
+
+      <div class="ratings-row reveal">
+        <div class="rating-card">
+          <span class="rating-card__source">Tripadvisor</span>
+          <span class="rating-card__score">4,7<small>/5</small></span>
+          <span class="rating-card__count" data-i18n="reviews.ta.count">31 recensioni</span>
+        </div>
+        <div class="rating-card">
+          <span class="rating-card__source">Google</span>
+          <span class="rating-card__score">4,9<small>/5</small></span>
+          <span class="rating-card__count" data-i18n="reviews.google.count">998 recensioni</span>
+        </div>
+      </div>
+
+      <div class="reviews__grid reveal-stagger">
+        <div class="review-bubble">
+          <p class="review-bubble__text" data-i18n="reviews.r1.text">"Location artefatta che richiama una tipica locanda giapponese. Uno dei ramen più buoni di Milano. Personale gentilissimo."</p>
+          <div class="review-bubble__author">
+            <strong>Carocheftiscrivo</strong>
+            <span data-i18n="reviews.r1.source">Tripadvisor · Recensione "Eccezionale"</span>
+          </div>
+        </div>
+        <div class="review-bubble">
+          <p class="review-bubble__text" data-i18n="reviews.r2.text">"Menù non vastissimo, ma piatti ben preparati: il ramen, in diverse varianti, buono. Ottimo il servizio, prezzo giusto."</p>
+          <div class="review-bubble__author">
+            <strong>Alberto T. Biondi</strong>
+            <span data-i18n="reviews.r2.source">Tripadvisor</span>
+          </div>
+        </div>
+        <div class="review-bubble">
+          <p class="review-bubble__text" data-i18n="reviews.r3.text">"Ho cenato da Sento Ramen e l'esperienza è stata fantastica. Il vero punto di forza è la personalizzazione del brodo, ricco e saporito."</p>
+          <div class="review-bubble__author">
+            <strong>Andrea Riva</strong>
+            <span data-i18n="reviews.r3.source">Google · Local Guide</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       HOURS & LOCATION SECTION
+       ============================================================ -->
+  <section class="section section--dark" id="dove-siamo">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-kicker" data-i18n="hours.kicker">場所</span>
+        <h2 class="section-title section-title--light" data-i18n="hours.title">Orari & Dove Siamo</h2>
+        <div class="divider">
+          <span class="divider__line"></span>
+          <span class="divider__icon">📍</span>
+          <span class="divider__line"></span>
+        </div>
+        <p class="section-subtitle section-subtitle--light" data-i18n="hours.subtitle">
+          Ci trovi in Via Cenisio 13, a Milano.
+        </p>
+      </div>
+
+      <div class="hours__grid">
+
+        <div class="hours__info reveal reveal--left">
+          <h3 class="hours__info-title" data-i18n="hours.info.title">🕐 Orari di Apertura</h3>
+          <table class="hours__table">
+            <tr class="closed">
+              <td data-i18n="hours.mon">Lunedì</td>
+              <td data-i18n="hours.closed">Chiuso</td>
+            </tr>
+            <tr>
+              <td data-i18n="hours.tue">Martedì</td>
+              <td data-i18n="hours.time">12:00–15:00 / 19:00–23:00</td>
+            </tr>
+            <tr>
+              <td data-i18n="hours.wed">Mercoledì</td>
+              <td data-i18n="hours.time">12:00–15:00 / 19:00–23:00</td>
+            </tr>
+            <tr>
+              <td data-i18n="hours.thu">Giovedì</td>
+              <td data-i18n="hours.time">12:00–15:00 / 19:00–23:00</td>
+            </tr>
+            <tr>
+              <td data-i18n="hours.fri">Venerdì</td>
+              <td data-i18n="hours.time">12:00–15:00 / 19:00–23:00</td>
+            </tr>
+            <tr>
+              <td data-i18n="hours.sat">Sabato</td>
+              <td data-i18n="hours.time">12:00–15:00 / 19:00–23:00</td>
+            </tr>
+            <tr>
+              <td data-i18n="hours.sun">Domenica</td>
+              <td data-i18n="hours.time">12:00–15:00 / 19:00–23:00</td>
+            </tr>
+          </table>
+
+          <div class="hours__address">
+            <h3 class="hours__address-title" data-i18n="hours.address.title">📍 Indirizzo</h3>
+            <p class="hours__address-text">
+              <strong data-i18n="hours.address.text">Via Cenisio 13, 20154 Milano (MI)</strong><br>
+              <a href="tel:+390249770189">📞 02 4977 0189</a><br><br>
+              <a href="https://www.google.com/maps/search/?api=1&query=Sento+Ramen+Via+Cenisio+13+Milano"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 data-i18n="hours.address.directions">Indicazioni stradali →</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="hours__map reveal reveal--right">
+          <iframe
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Via+Cenisio+13,+20154+Milano,+Italy&zoom=16"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mappa - Sento Ramen">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       BOOKING SECTION
+       ============================================================ -->
+  <section class="section" id="prenota">
+    <div class="container">
+      <div class="booking__wrapper">
+
+        <div class="booking__info reveal reveal--left">
+          <span class="booking__info-label" data-i18n="booking.label">Prenotazioni</span>
+          <h2 class="booking__info-title" data-i18n="booking.title">Prenota il tuo tavolo</h2>
+          <p class="booking__info-text" data-i18n="booking.text">
+            Compila il modulo per una richiesta diretta, oppure prenota in un clic tramite TheFork. Ti aspettiamo per la tua prossima ciotola di ramen.
+          </p>
+
+          <a href="https://www.thefork.it/ristorante/sento-ramen-r745125" target="_blank" rel="noopener noreferrer" class="btn btn--thefork">
+            <span aria-hidden="true">🍽️</span> <span data-i18n="booking.thefork">Prenota su TheFork</span>
+          </a>
+
+          <div class="booking__contact-methods">
+            <a href="tel:+390249770189" class="booking__contact-item">
+              <div class="booking__contact-icon">📞</div>
+              <div>
+                <div class="booking__contact-label" data-i18n="booking.phone.label">Telefono</div>
+                <div class="booking__contact-value"><strong>02 4977 0189</strong></div>
+              </div>
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Sento+Ramen+Via+Cenisio+13+Milano"
+               target="_blank" rel="noopener noreferrer" class="booking__contact-item">
+              <div class="booking__contact-icon">📍</div>
+              <div>
+                <div class="booking__contact-label" data-i18n="booking.address.label">Indirizzo</div>
+                <div class="booking__contact-value">Via Cenisio 13, Milano</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="booking__form-card reveal reveal--right">
+          <h3 class="booking__form-title" data-i18n="booking.form.title">Richiedi Prenotazione</h3>
+
+          <form id="booking-form" class="booking__form">
+            <div class="form-group">
+              <label for="booking-name" data-i18n="booking.form.name">Nome e Cognome</label>
+              <input type="text" id="booking-name" name="name" required
+                     data-i18n-placeholder="booking.form.name.placeholder"
+                     placeholder="Il tuo nome">
+            </div>
+
+            <div class="form-group">
+              <label for="booking-phone" data-i18n="booking.form.phone">Telefono</label>
+              <input type="tel" id="booking-phone" name="phone" required
+                     data-i18n-placeholder="booking.form.phone.placeholder"
+                     placeholder="Il tuo numero">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="booking-date" data-i18n="booking.form.date">Data</label>
+                <input type="date" id="booking-date" name="date" required>
+              </div>
+              <div class="form-group">
+                <label for="booking-time" data-i18n="booking.form.time">Ora</label>
+                <select id="booking-time" name="time" required>
+                  <option value="12:00">12:00</option>
+                  <option value="12:30">12:30</option>
+                  <option value="13:00">13:00</option>
+                  <option value="13:30">13:30</option>
+                  <option value="14:00">14:00</option>
+                  <option value="19:00" selected>19:00</option>
+                  <option value="19:30">19:30</option>
+                  <option value="20:00">20:00</option>
+                  <option value="20:30">20:30</option>
+                  <option value="21:00">21:00</option>
+                  <option value="21:30">21:30</option>
+                  <option value="22:00">22:00</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="booking-guests" data-i18n="booking.form.guests">Numero Ospiti</label>
+              <input type="number" id="booking-guests" name="guests" min="1" max="20" value="2" required
+                     data-i18n-placeholder="booking.form.guests.placeholder"
+                     placeholder="Quante persone?">
+            </div>
+
+            <div class="form-group">
+              <label for="booking-notes" data-i18n="booking.form.notes">Note (opzionale)</label>
+              <textarea id="booking-notes" name="notes" rows="3"
+                        data-i18n-placeholder="booking.form.notes.placeholder"
+                        placeholder="Richieste speciali, allergie, etc."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary" data-i18n="booking.form.submit">
+              Invia Richiesta di Prenotazione
+            </button>
+
+            <a class="credit-line" href="mailto:fiorel2709@gmail.com?subject=RICHIESTA%20INFORMAZIONI%20PER%20SITO">
+              <span class="credit-text">Website designed by Leonardo Fiore</span>
+              <span class="credit-seal" aria-hidden="true">
+                <span class="mono"><span>L</span><span>F</span></span>
+              </span>
+            </a>
+          </form>
+
+          <div class="form-success">
+            <div class="form-success__icon">🍜</div>
+            <h4 class="form-success__title" data-i18n="booking.form.success.title">Richiesta Inviata!</h4>
+            <p class="form-success__text" data-i18n="booking.form.success.text">
+              Ti ricontatteremo al più presto per confermare. In alternativa, chiamaci al 02 4977 0189.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div>
+          <h3 class="footer__brand-name">Sento Ramen</h3>
+          <p class="footer__brand-desc" data-i18n="footer.brand.desc">
+            Ristorante giapponese specializzato in ramen artigianale, nel cuore di Milano.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer__column-title" data-i18n="footer.nav.title">Navigazione</h4>
+          <ul class="footer__links">
+            <li><a href="#hero" data-i18n="nav.home">Home</a></li>
+            <li><a href="#storia" data-i18n="nav.about">La Storia</a></li>
+            <li><a href="#menu" data-i18n="nav.menu">Menu</a></li>
+            <li><a href="#recensioni" data-i18n="nav.reviews">Recensioni</a></li>
+            <li><a href="#dove-siamo" data-i18n="nav.hours">Dove Siamo</a></li>
+            <li><a href="#prenota" data-i18n="nav.booking">Prenota</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__column-title" data-i18n="footer.contact.title">Contatti</h4>
+          <ul class="footer__links">
+            <li><a href="tel:+390249770189">📞 02 4977 0189</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Sento+Ramen+Via+Cenisio+13+Milano" target="_blank" rel="noopener noreferrer">📍 Via Cenisio 13, Milano</a></li>
+            <li><a href="https://www.thefork.it/ristorante/sento-ramen-r745125" target="_blank" rel="noopener noreferrer">🍽️ TheFork</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright" data-i18n="footer.copyright">© 2026 Sento Ramen. Tutti i diritti riservati.</p>
+        <p class="footer__made-with" data-i18n="footer.madewith">Fatto con <span>♥</span> a Milano</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
