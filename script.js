@@ -19,7 +19,7 @@ const translations = {
     'hero.sticker1': '熱々!',
     'hero.sticker2': 'ずるずる〜',
     'hero.description': 'Brodo che sobbolle da ore, noodles al dente, chashu che si scioglie in bocca. Un pezzo di Giappone in Via Cenisio, per chi il ramen lo vive come una scena di manga.',
-    'hero.cta': 'Prenota un Tavolo',
+    'hero.cta': 'Prenota su WhatsApp',
     'hero.cta2': 'Scopri il Menu',
     'hero.scroll': 'Scorri',
     'hero.google': 'Google · 998 recensioni',
@@ -86,34 +86,29 @@ const translations = {
     'hours.time': '12:00–15:00 / 19:00–23:00',
     'hours.address.title': '📍 Indirizzo',
     'hours.address.text': 'Via Cenisio 13, 20154 Milano (MI)',
-    'hours.address.directions': 'Indicazioni stradali →',
+    'hours.address.directions': '📍 Indicazioni stradali',
+    'hours.address.whatsapp': '💬 Prenota su WhatsApp',
 
     // Booking
     'booking.label': 'Prenotazioni',
     'booking.title': 'Prenota il tuo tavolo',
-    'booking.text': 'Compila il modulo per una richiesta diretta, oppure prenota in un clic tramite TheFork. Ti aspettiamo per la tua prossima ciotola di ramen.',
-    'booking.thefork': 'Prenota su TheFork',
+    'booking.text': 'Scrivici su WhatsApp e prenota in un attimo. Ti aspettiamo per la tua prossima ciotola di ramen.',
+    'booking.whatsapp': 'Prenota su WhatsApp',
     'booking.phone.label': 'Telefono',
+    'booking.whatsapp.label': 'WhatsApp',
     'booking.address.label': 'Indirizzo',
-    'booking.form.title': 'Richiedi Prenotazione',
-    'booking.form.name': 'Nome e Cognome',
-    'booking.form.name.placeholder': 'Il tuo nome',
-    'booking.form.phone': 'Telefono',
-    'booking.form.phone.placeholder': 'Il tuo numero',
-    'booking.form.date': 'Data',
-    'booking.form.time': 'Ora',
-    'booking.form.guests': 'Numero Ospiti',
-    'booking.form.guests.placeholder': 'Quante persone?',
-    'booking.form.notes': 'Note (opzionale)',
-    'booking.form.notes.placeholder': 'Richieste speciali, allergie, etc.',
-    'booking.form.submit': 'Invia Richiesta di Prenotazione',
-    'booking.form.success.title': 'Richiesta Inviata!',
-    'booking.form.success.text': 'Ti ricontatteremo al più presto per confermare. In alternativa, chiamaci al 02 4977 0189.',
+
+    // Delivery
+    'delivery.kicker': '出前',
+    'delivery.title': 'Ordina a Domicilio',
+    'delivery.subtitle': 'Il nostro ramen anche a casa tua: ordina su Deliveroo o Glovo.',
+    'delivery.order': 'Ordina ora →',
 
     // Footer
     'footer.brand.desc': 'Ristorante giapponese specializzato in ramen artigianale, nel cuore di Milano.',
     'footer.nav.title': 'Navigazione',
     'footer.contact.title': 'Contatti',
+    'footer.social.title': 'Seguici',
     'footer.copyright': '© 2026 Sento Ramen. Tutti i diritti riservati.',
     'footer.madewith': 'Fatto con <span>♥</span> a Milano',
   },
@@ -133,7 +128,7 @@ const translations = {
     'hero.sticker1': 'Piping Hot!',
     'hero.sticker2': 'Slurp~',
     'hero.description': 'Broth simmered for hours, noodles cooked just right, chashu that melts in your mouth. A slice of Japan on Via Cenisio, for anyone who lives ramen like a scene from a manga.',
-    'hero.cta': 'Book a Table',
+    'hero.cta': 'Book on WhatsApp',
     'hero.cta2': 'Discover the Menu',
     'hero.scroll': 'Scroll',
     'hero.google': 'Google · 998 reviews',
@@ -200,34 +195,29 @@ const translations = {
     'hours.time': '12:00–3:00 PM / 7:00–11:00 PM',
     'hours.address.title': '📍 Address',
     'hours.address.text': 'Via Cenisio 13, 20154 Milan (MI), Italy',
-    'hours.address.directions': 'Get Directions →',
+    'hours.address.directions': '📍 Get Directions',
+    'hours.address.whatsapp': '💬 Book on WhatsApp',
 
     // Booking
     'booking.label': 'Reservations',
     'booking.title': 'Book your table',
-    'booking.text': 'Fill out the form for a direct request, or book in one click via TheFork. We\'re waiting for your next bowl of ramen.',
-    'booking.thefork': 'Book on TheFork',
+    'booking.text': 'Message us on WhatsApp and book in a moment. We\'re waiting for your next bowl of ramen.',
+    'booking.whatsapp': 'Book on WhatsApp',
     'booking.phone.label': 'Phone',
+    'booking.whatsapp.label': 'WhatsApp',
     'booking.address.label': 'Address',
-    'booking.form.title': 'Request a Reservation',
-    'booking.form.name': 'Full Name',
-    'booking.form.name.placeholder': 'Your name',
-    'booking.form.phone': 'Phone',
-    'booking.form.phone.placeholder': 'Your number',
-    'booking.form.date': 'Date',
-    'booking.form.time': 'Time',
-    'booking.form.guests': 'Number of Guests',
-    'booking.form.guests.placeholder': 'How many people?',
-    'booking.form.notes': 'Notes (optional)',
-    'booking.form.notes.placeholder': 'Special requests, allergies, etc.',
-    'booking.form.submit': 'Send Reservation Request',
-    'booking.form.success.title': 'Request Sent!',
-    'booking.form.success.text': 'We\'ll contact you shortly to confirm. You can also call us at +39 02 4977 0189.',
+
+    // Delivery
+    'delivery.kicker': 'Delivery',
+    'delivery.title': 'Order Delivery',
+    'delivery.subtitle': 'Enjoy our ramen at home too: order on Deliveroo or Glovo.',
+    'delivery.order': 'Order now →',
 
     // Footer
     'footer.brand.desc': 'Japanese restaurant specializing in handmade ramen, in the heart of Milan.',
     'footer.nav.title': 'Navigation',
     'footer.contact.title': 'Contact',
+    'footer.social.title': 'Follow Us',
     'footer.copyright': '© 2026 Sento Ramen. All rights reserved.',
     'footer.madewith': 'Made with <span>♥</span> in Milan',
   }
@@ -336,36 +326,6 @@ function initSmoothScroll() {
 }
 
 
-/* ---------- Booking Form ---------- */
-function initBookingForm() {
-  const form = document.getElementById('booking-form');
-  if (!form) return;
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const formCard = document.querySelector('.booking__form-card');
-    const successMsg = document.querySelector('.form-success');
-
-    if (formCard && successMsg) {
-      form.style.display = 'none';
-      successMsg.classList.add('visible');
-    }
-
-    setTimeout(() => {
-      window.location.href = 'tel:+390249770189';
-    }, 2200);
-  });
-
-  const dateInput = form.querySelector('input[type="date"]');
-  if (dateInput) {
-    const today = new Date().toISOString().split('T')[0];
-    dateInput.setAttribute('min', today);
-    dateInput.value = today;
-  }
-}
-
-
 /* ---------- Language Button Handlers ---------- */
 function initLanguageSwitcher() {
   document.querySelectorAll('.lang-btn').forEach(btn => {
@@ -400,7 +360,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initScrollReveal();
   initSmoothScroll();
-  initBookingForm();
   initLanguageSwitcher();
   initParallax();
 });

@@ -54,6 +54,9 @@
 
   <title>Sento Ramen — Ristorante Giapponese | Via Cenisio 13, Milano</title>
 
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
@@ -71,6 +74,7 @@
     <div class="container navbar__inner">
 
       <a href="#hero" class="navbar__logo">
+        <img class="navbar__logo-img" src="img/logo-mascotte.jpg" alt="Logo Sento Ramen" loading="eager">
         <span class="navbar__logo-kanji">千都</span>
         <span class="navbar__logo-text">SENTO<em>RAMEN</em></span>
       </a>
@@ -81,7 +85,7 @@
         <a href="#menu" class="navbar__link" data-i18n="nav.menu">Menu</a>
         <a href="#recensioni" class="navbar__link" data-i18n="nav.reviews">Recensioni</a>
         <a href="#dove-siamo" class="navbar__link" data-i18n="nav.hours">Dove Siamo</a>
-        <a href="#prenota" class="navbar__link" data-i18n="nav.booking">Prenota</a>
+        <a href="https://wa.me/393273361971?text=Ciao%2C%20vorrei%20prenotare%20un%20tavolo%20da%20Sento%20Ramen%20%F0%9F%8D%9C" target="_blank" rel="noopener noreferrer" class="navbar__link" data-i18n="nav.booking">Prenota</a>
 
         <div class="navbar__utility">
           <!-- Language Switcher -->
@@ -93,11 +97,6 @@
               <span class="lang-btn__flag">🇬🇧</span>
             </button>
           </div>
-
-          <!-- Designer credit seal (compact) -->
-          <a class="nav-credit" href="mailto:fiorel2709@gmail.com?subject=RICHIESTA%20INFORMAZIONI%20PER%20SITO" title="Website designed by Leonardo Fiore" aria-label="Website designed by Leonardo Fiore">
-            <span class="mono"><span>L</span><span>F</span></span>
-          </a>
         </div>
       </div>
 
@@ -138,12 +137,20 @@
         Brodo che sobbolle da ore, noodles al dente, chashu che si scioglie in bocca. Un pezzo di Giappone in Via Cenisio, per chi il ramen lo vive come una scena di manga.
       </p>
       <div class="hero__actions">
-        <a href="#prenota" class="btn btn--primary" data-i18n="hero.cta">Prenota un Tavolo</a>
+        <a href="https://wa.me/393273361971?text=Ciao%2C%20vorrei%20prenotare%20un%20tavolo%20da%20Sento%20Ramen%20%F0%9F%8D%9C" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp" data-i18n="hero.cta">PRENOTA SU WHATSAPP</a>
         <a href="#menu" class="btn btn--outline" data-i18n="hero.cta2">Scopri il Menu</a>
       </div>
       <div class="hero__ratings">
         <span class="hero__rating-pill">⭐ <strong>4,9</strong>/5 <span data-i18n="hero.google">Google · 998 recensioni</span></span>
         <span class="hero__rating-pill">🦉 <strong>4,7</strong>/5 <span data-i18n="hero.tripadvisor">Tripadvisor · 31 recensioni</span></span>
+      </div>
+      <div class="hero__socials" aria-label="Seguici sui social">
+        <a href="https://www.instagram.com/sento.ramen?stkn=MWZtcndkZW1uMmx2eA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="hero__social-icon hero__social-icon--instagram" aria-label="Instagram" title="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.facebook.com/share/19oTgJS8Hj/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="hero__social-icon hero__social-icon--facebook" aria-label="Facebook" title="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.13 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.89h2.78l-.44 2.91h-2.34V22c4.78-.81 8.44-4.94 8.44-9.94Z"/></svg>
+        </a>
       </div>
     </div>
 
@@ -312,16 +319,16 @@
 
       <div class="gallery__grid reveal-stagger">
         <div class="gallery__item gallery__item--tall">
-          <img src="img/sala-onda-hokusai.jpg" alt="Sala interna di Sento Ramen con murale dell'onda di Hokusai e lanterne rosse" loading="lazy">
+          <img src="img/interno-sala-1.jpg" alt="Sala interna di Sento Ramen con lanterne rosse giapponesi e murale dell'onda di Hokusai" loading="lazy">
           <span class="gallery__caption" data-i18n="gallery.cap1">La Sala Principale</span>
         </div>
         <div class="gallery__item">
-          <img src="img/interno-lanterne.jpg" alt="Lanterne rosse giapponesi appese al soffitto di Sento Ramen" loading="lazy">
+          <img src="img/interno-sala-2.jpg" alt="Sala di Sento Ramen con lanterne rosse e murale giapponese" loading="lazy">
           <span class="gallery__caption" data-i18n="gallery.cap2">Lanterne e Atmosfera</span>
         </div>
-        <div class="gallery__item">
-          <img src="img/facciata-locale-mascotte.jpg" alt="Facciata di Sento Ramen in Via Cenisio a Milano" loading="lazy">
-          <span class="gallery__caption" data-i18n="gallery.cap3">In Via Cenisio 13</span>
+        <div class="gallery__item gallery__item--logo">
+          <img src="img/logo-mascotte.jpg" alt="Logo Sento Ramen" loading="lazy">
+          <span class="gallery__caption" data-i18n="gallery.cap3">Sento Ramen</span>
         </div>
       </div>
     </div>
@@ -439,13 +446,23 @@
           <div class="hours__address">
             <h3 class="hours__address-title" data-i18n="hours.address.title">📍 Indirizzo</h3>
             <p class="hours__address-text">
-              <strong data-i18n="hours.address.text">Via Cenisio 13, 20154 Milano (MI)</strong><br>
-              <a href="tel:+390249770189">📞 02 4977 0189</a><br><br>
+              <a href="https://www.google.com/maps/search/?api=1&query=Sento+Ramen+Via+Cenisio+13+Milano" target="_blank" rel="noopener noreferrer">
+                <strong data-i18n="hours.address.text">Via Cenisio 13, 20154 Milano (MI)</strong>
+              </a><br>
+              <a href="tel:+390249770189">📞 02 4977 0189</a>
+            </p>
+            <div class="hours__address-actions">
               <a href="https://www.google.com/maps/search/?api=1&query=Sento+Ramen+Via+Cenisio+13+Milano"
                  target="_blank"
                  rel="noopener noreferrer"
-                 data-i18n="hours.address.directions">Indicazioni stradali →</a>
-            </p>
+                 class="hours__address-btn"
+                 data-i18n="hours.address.directions">📍 Indicazioni stradali</a>
+              <a href="https://wa.me/393273361971?text=Ciao%2C%20vorrei%20prenotare%20un%20tavolo%20da%20Sento%20Ramen%20%F0%9F%8D%9C"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="hours__address-btn hours__address-btn--whatsapp"
+                 data-i18n="hours.address.whatsapp">💬 Prenota su WhatsApp</a>
+            </div>
           </div>
         </div>
 
@@ -471,15 +488,15 @@
     <div class="container">
       <div class="booking__wrapper">
 
-        <div class="booking__info reveal reveal--left">
+        <div class="booking__info reveal">
           <span class="booking__info-label" data-i18n="booking.label">Prenotazioni</span>
           <h2 class="booking__info-title" data-i18n="booking.title">Prenota il tuo tavolo</h2>
           <p class="booking__info-text" data-i18n="booking.text">
-            Compila il modulo per una richiesta diretta, oppure prenota in un clic tramite TheFork. Ti aspettiamo per la tua prossima ciotola di ramen.
+            Scrivici su WhatsApp e prenota in un attimo. Ti aspettiamo per la tua prossima ciotola di ramen.
           </p>
 
-          <a href="https://www.thefork.it/ristorante/sento-ramen-r745125" target="_blank" rel="noopener noreferrer" class="btn btn--thefork">
-            <span aria-hidden="true">🍽️</span> <span data-i18n="booking.thefork">Prenota su TheFork</span>
+          <a href="https://wa.me/393273361971?text=Ciao%2C%20vorrei%20prenotare%20un%20tavolo%20da%20Sento%20Ramen%20%F0%9F%8D%9C" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp btn--whatsapp-full">
+            <span aria-hidden="true">💬</span> <span data-i18n="booking.whatsapp">Prenota su WhatsApp</span>
           </a>
 
           <div class="booking__contact-methods">
@@ -488,6 +505,13 @@
               <div>
                 <div class="booking__contact-label" data-i18n="booking.phone.label">Telefono</div>
                 <div class="booking__contact-value"><strong>02 4977 0189</strong></div>
+              </div>
+            </a>
+            <a href="https://wa.me/393273361971" target="_blank" rel="noopener noreferrer" class="booking__contact-item">
+              <div class="booking__contact-icon">💬</div>
+              <div>
+                <div class="booking__contact-label" data-i18n="booking.whatsapp.label">WhatsApp</div>
+                <div class="booking__contact-value"><strong>327 336 1971</strong></div>
               </div>
             </a>
             <a href="https://www.google.com/maps/search/?api=1&query=Sento+Ramen+Via+Cenisio+13+Milano"
@@ -501,83 +525,42 @@
           </div>
         </div>
 
-        <div class="booking__form-card reveal reveal--right">
-          <h3 class="booking__form-title" data-i18n="booking.form.title">Richiedi Prenotazione</h3>
+      </div>
+    </div>
+  </section>
 
-          <form id="booking-form" class="booking__form">
-            <div class="form-group">
-              <label for="booking-name" data-i18n="booking.form.name">Nome e Cognome</label>
-              <input type="text" id="booking-name" name="name" required
-                     data-i18n-placeholder="booking.form.name.placeholder"
-                     placeholder="Il tuo nome">
-            </div>
 
-            <div class="form-group">
-              <label for="booking-phone" data-i18n="booking.form.phone">Telefono</label>
-              <input type="tel" id="booking-phone" name="phone" required
-                     data-i18n-placeholder="booking.form.phone.placeholder"
-                     placeholder="Il tuo numero">
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="booking-date" data-i18n="booking.form.date">Data</label>
-                <input type="date" id="booking-date" name="date" required>
-              </div>
-              <div class="form-group">
-                <label for="booking-time" data-i18n="booking.form.time">Ora</label>
-                <select id="booking-time" name="time" required>
-                  <option value="12:00">12:00</option>
-                  <option value="12:30">12:30</option>
-                  <option value="13:00">13:00</option>
-                  <option value="13:30">13:30</option>
-                  <option value="14:00">14:00</option>
-                  <option value="19:00" selected>19:00</option>
-                  <option value="19:30">19:30</option>
-                  <option value="20:00">20:00</option>
-                  <option value="20:30">20:30</option>
-                  <option value="21:00">21:00</option>
-                  <option value="21:30">21:30</option>
-                  <option value="22:00">22:00</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="booking-guests" data-i18n="booking.form.guests">Numero Ospiti</label>
-              <input type="number" id="booking-guests" name="guests" min="1" max="20" value="2" required
-                     data-i18n-placeholder="booking.form.guests.placeholder"
-                     placeholder="Quante persone?">
-            </div>
-
-            <div class="form-group">
-              <label for="booking-notes" data-i18n="booking.form.notes">Note (opzionale)</label>
-              <textarea id="booking-notes" name="notes" rows="3"
-                        data-i18n-placeholder="booking.form.notes.placeholder"
-                        placeholder="Richieste speciali, allergie, etc."></textarea>
-            </div>
-
-            <button type="submit" class="btn btn--primary" data-i18n="booking.form.submit">
-              Invia Richiesta di Prenotazione
-            </button>
-
-            <a class="credit-line" href="mailto:fiorel2709@gmail.com?subject=RICHIESTA%20INFORMAZIONI%20PER%20SITO">
-              <span class="credit-text">Website designed by Leonardo Fiore</span>
-              <span class="credit-seal" aria-hidden="true">
-                <span class="mono"><span>L</span><span>F</span></span>
-              </span>
-            </a>
-          </form>
-
-          <div class="form-success">
-            <div class="form-success__icon">🍜</div>
-            <h4 class="form-success__title" data-i18n="booking.form.success.title">Richiesta Inviata!</h4>
-            <p class="form-success__text" data-i18n="booking.form.success.text">
-              Ti ricontatteremo al più presto per confermare. In alternativa, chiamaci al 02 4977 0189.
-            </p>
-          </div>
+  <!-- ============================================================
+       DELIVERY SECTION
+       ============================================================ -->
+  <section class="section section--cream" id="delivery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-kicker" data-i18n="delivery.kicker">出前</span>
+        <h2 class="section-title" data-i18n="delivery.title">Ordina a Domicilio</h2>
+        <div class="divider">
+          <span class="divider__line"></span>
+          <span class="divider__icon">🛵</span>
+          <span class="divider__line"></span>
         </div>
+        <p class="section-subtitle" data-i18n="delivery.subtitle">
+          Il nostro ramen anche a casa tua: ordina su Deliveroo o Glovo.
+        </p>
+      </div>
 
+      <div class="delivery__grid reveal-stagger">
+        <a href="https://deliveroo.it/menu/milano/portello-isola/sento-ramen-ristorante-giapponese-via-cenisio-13?utm_campaign=organic&utm_medium=referrer&utm_source=menu_share"
+           target="_blank" rel="noopener noreferrer" class="delivery__card delivery__card--deliveroo">
+          <span class="delivery__card-icon" aria-hidden="true">🛵</span>
+          <span class="delivery__card-name">Deliveroo</span>
+          <span class="delivery__card-cta" data-i18n="delivery.order">Ordina ora →</span>
+        </a>
+        <a href="https://glovo.go.link/open?link_type=store&store_id=581163&adjust_t=s321jkn"
+           target="_blank" rel="noopener noreferrer" class="delivery__card delivery__card--glovo">
+          <span class="delivery__card-icon" aria-hidden="true">🛵</span>
+          <span class="delivery__card-name">Glovo</span>
+          <span class="delivery__card-cta" data-i18n="delivery.order">Ordina ora →</span>
+        </a>
       </div>
     </div>
   </section>
@@ -605,7 +588,7 @@
             <li><a href="#menu" data-i18n="nav.menu">Menu</a></li>
             <li><a href="#recensioni" data-i18n="nav.reviews">Recensioni</a></li>
             <li><a href="#dove-siamo" data-i18n="nav.hours">Dove Siamo</a></li>
-            <li><a href="#prenota" data-i18n="nav.booking">Prenota</a></li>
+            <li><a href="https://wa.me/393273361971?text=Ciao%2C%20vorrei%20prenotare%20un%20tavolo%20da%20Sento%20Ramen%20%F0%9F%8D%9C" target="_blank" rel="noopener noreferrer" data-i18n="nav.booking">Prenota</a></li>
           </ul>
         </div>
 
@@ -613,9 +596,21 @@
           <h4 class="footer__column-title" data-i18n="footer.contact.title">Contatti</h4>
           <ul class="footer__links">
             <li><a href="tel:+390249770189">📞 02 4977 0189</a></li>
+            <li><a href="https://wa.me/393273361971" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a></li>
             <li><a href="https://www.google.com/maps/search/?api=1&query=Sento+Ramen+Via+Cenisio+13+Milano" target="_blank" rel="noopener noreferrer">📍 Via Cenisio 13, Milano</a></li>
-            <li><a href="https://www.thefork.it/ristorante/sento-ramen-r745125" target="_blank" rel="noopener noreferrer">🍽️ TheFork</a></li>
           </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__column-title" data-i18n="footer.social.title">Seguici</h4>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/sento.ramen?stkn=MWZtcndkZW1uMmx2eA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="footer__social-icon footer__social-icon--instagram" aria-label="Instagram" title="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://www.facebook.com/share/19oTgJS8Hj/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="footer__social-icon footer__social-icon--facebook" aria-label="Facebook" title="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5 3.66 9.13 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.89h2.78l-.44 2.91h-2.34V22c4.78-.81 8.44-4.94 8.44-9.94Z"/></svg>
+            </a>
+          </div>
         </div>
 
       </div>
@@ -623,6 +618,12 @@
       <div class="footer__bottom">
         <p class="footer__copyright" data-i18n="footer.copyright">© 2026 Sento Ramen. Tutti i diritti riservati.</p>
         <p class="footer__made-with" data-i18n="footer.madewith">Fatto con <span>♥</span> a Milano</p>
+        <a class="credit-line credit-line--footer" href="mailto:ficolc78@gmail.com?subject=RICHIESTA%20INFORMAZIONI%20PER%20SITO">
+          <span class="credit-text">Website designed by FICO</span>
+          <span class="credit-seal" aria-hidden="true">
+            <img src="img/logo-fico.png" alt="Logo FICO">
+          </span>
+        </a>
       </div>
     </div>
   </footer>
