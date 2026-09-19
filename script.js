@@ -53,6 +53,7 @@ const translations = {
     'menu.item6.title': 'Mochi',
     'menu.item6.badge': 'Dolce',
     'menu.item6.desc': 'Il finale perfetto: morbidi mochi giapponesi al tè matcha e al cocco.',
+    'menu.veg': 'Scelte vegetariane disponibili nel menù (🌱) >>>',
     'menu.note': '✦ Scegli il tuo brodo: MISO (originale), SOIA (speziato salato) o TANTANMEN (speziato piccante) — qui sotto il menu completo esposto in locale ✦',
 
     // Gallery
@@ -162,6 +163,7 @@ const translations = {
     'menu.item6.title': 'Mochi',
     'menu.item6.badge': 'Dessert',
     'menu.item6.desc': 'The perfect ending: soft Japanese mochi in matcha and coconut.',
+    'menu.veg': 'Vegetarian options available on the menu (🌱) >>>',
     'menu.note': '✦ Choose your broth: MISO (original), SOY (spiced & salty) or TANTANMEN (medium spicy) — full in-store menu below ✦',
 
     // Gallery
