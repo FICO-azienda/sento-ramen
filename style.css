@@ -317,6 +317,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 .hero__social-icon:hover { transform: translateY(-3px); border-color: var(--color-gold-light); }
 .hero__social-icon--instagram:hover { background: radial-gradient(circle at 30% 110%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); border-color: transparent; }
 .hero__social-icon--facebook:hover { background: #1877F2; border-color: transparent; }
+.hero__social-icon--tiktok:hover { background: #000; border-color: var(--color-paper); }
 
 .hero__scroll-hint {
   position: absolute; bottom: var(--space-lg); left: 50%; transform: translateX(-50%);
@@ -396,6 +397,8 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 }
 .dish-card:nth-child(even) .dish-card__frame { box-shadow: -6px 6px 0 var(--color-gold); }
 .dish-card__frame img { width: 100%; height: 100%; object-fit: cover; }
+.dish-card__frame--collage { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 3px; background: var(--color-cream); }
+.dish-card__frame--collage img { min-width: 0; min-height: 0; }
 .dish-card__price {
   position: absolute; top: 10px; right: 10px;
   background: var(--color-red); color: var(--color-white);
@@ -510,10 +513,10 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 .delivery__card:hover { transform: translate(-2px, -2px); box-shadow: 5px 5px 0 var(--color-ink); }
-.delivery__card-icon { font-size: 2.2rem; }
+.delivery__card-logo { width: 56px; height: 56px; }
 .delivery__card-name { font-family: var(--font-display); font-size: 1.4rem; letter-spacing: 0.02em; }
-.delivery__card--deliveroo .delivery__card-name { color: #00CCBC; }
-.delivery__card--glovo .delivery__card-name { color: #FFC244; text-shadow: 1px 1px 0 var(--color-ink); }
+.delivery__card--deliveroo .delivery__card-name { color: #00A99D; }
+.delivery__card--glovo .delivery__card-name { color: var(--color-ink); }
 .delivery__card-cta { font-weight: 700; font-size: 0.9rem; color: var(--color-ink-soft); }
 
 /* Designer credit seal */
@@ -561,6 +564,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 .footer__social-icon:hover { transform: translateY(-3px); border-color: transparent; }
 .footer__social-icon--instagram:hover { background: radial-gradient(circle at 30% 110%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
 .footer__social-icon--facebook:hover { background: #1877F2; }
+.footer__social-icon--tiktok:hover { background: #000; border-color: var(--color-paper); }
 .footer__bottom { display: flex; justify-content: space-between; align-items: center; padding-top: var(--space-lg); border-top: 1px solid rgba(243, 236, 218, 0.12); font-size: 0.85rem; flex-wrap: wrap; gap: 0.5rem; }
 .footer__made-with span { color: var(--color-red); }
 
