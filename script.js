@@ -52,7 +52,7 @@ const translations = {
     'menu.item5.desc': 'Pollo con salsa piccante, insalata di alghe, pollo fritto e ravioli fritti: gli antipasti più ordinati dai nostri clienti.',
     'menu.item6.title': 'Mochi',
     'menu.item6.badge': 'Dolce',
-    'menu.item6.desc': 'Il finale perfetto: morbidi mochi giapponesi al tè matcha e al cocco.',
+    'menu.item6.desc': 'Il finale perfetto: morbidi mochi giapponesi in tanti gusti, dal matcha al cocco.',
     'menu.veg': 'Scelte vegetariane disponibili nel menù (🌱) >>>',
     'menu.note': '✦ Scegli il tuo brodo: MISO (originale), SOIA (speziato salato) o TANTANMEN (speziato piccante) — qui sotto il menu completo esposto in locale ✦',
 
@@ -162,7 +162,7 @@ const translations = {
     'menu.item5.desc': 'Chicken with spicy sauce, seaweed salad, fried chicken and fried dumplings: the starters our guests order most.',
     'menu.item6.title': 'Mochi',
     'menu.item6.badge': 'Dessert',
-    'menu.item6.desc': 'The perfect ending: soft Japanese mochi in matcha and coconut.',
+    'menu.item6.desc': 'The perfect ending: soft Japanese mochi in many flavors, from matcha to coconut.',
     'menu.veg': 'Vegetarian options available on the menu (🌱) >>>',
     'menu.note': '✦ Choose your broth: MISO (original), SOY (spiced & salty) or TANTANMEN (medium spicy) — full in-store menu below ✦',
 
