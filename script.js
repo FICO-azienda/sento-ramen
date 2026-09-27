@@ -71,8 +71,8 @@ const translations = {
     'reviews.google.count': '998 recensioni',
     'reviews.r1.text': '"Location artefatta che richiama una tipica locanda giapponese. Uno dei ramen più buoni di Milano. Personale gentilissimo."',
     'reviews.r1.source': 'Tripadvisor · Recensione "Eccezionale"',
-    'reviews.r2.text': '"Menù non vastissimo, ma piatti ben preparati: il ramen, in diverse varianti, buono. Ottimo il servizio, prezzo giusto."',
-    'reviews.r2.source': 'Tripadvisor',
+    'reviews.r2.text': '"Ramen squisito, personale super educato e disponibile, locale intimo e pulito. Prezzi più che onesti."',
+    'reviews.r2.source': 'Google · Local Guide',
     'reviews.r3.text': '"Ho cenato da Sento Ramen e l\'esperienza è stata fantastica. Il vero punto di forza è la personalizzazione del brodo, ricco e saporito."',
     'reviews.r3.source': 'Google · Local Guide',
 
@@ -181,8 +181,8 @@ const translations = {
     'reviews.google.count': '998 reviews',
     'reviews.r1.text': '"A setting that truly recalls a typical Japanese inn. One of the best ramens in Milan. Extremely kind staff."',
     'reviews.r1.source': 'Tripadvisor · "Excellent" review',
-    'reviews.r2.text': '"The menu isn\'t huge, but the dishes are well prepared: the ramen, in its various versions, is good. Great service, fair price."',
-    'reviews.r2.source': 'Tripadvisor',
+    'reviews.r2.text': '"Exquisite ramen, super polite and helpful staff, cozy and clean place. More than fair prices."',
+    'reviews.r2.source': 'Google · Local Guide',
     'reviews.r3.text': '"I had dinner at Sento Ramen and it was fantastic. The real strength is the broth customization — rich and flavorful."',
     'reviews.r3.source': 'Google · Local Guide',
 
