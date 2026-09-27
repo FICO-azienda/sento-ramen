@@ -53,7 +53,6 @@ const translations = {
     'menu.item6.title': 'Mochi',
     'menu.item6.badge': 'Dolce',
     'menu.item6.desc': 'Il finale perfetto: morbidi mochi giapponesi in tanti gusti, dal matcha al cocco.',
-    'menu.veg': 'Scelte vegetariane disponibili nel menù (🌱) >>>',
     'menu.note': '✦ Scegli il tuo brodo: MISO (originale), SOIA (speziato salato) o TANTANMEN (speziato piccante) — qui sotto il menu completo esposto in locale ✦',
 
     // Gallery
@@ -83,7 +82,6 @@ const translations = {
     'hours.info.title': '🕐 Orari di Apertura',
     'hours.mon': 'Lunedì', 'hours.tue': 'Martedì', 'hours.wed': 'Mercoledì', 'hours.thu': 'Giovedì',
     'hours.fri': 'Venerdì', 'hours.sat': 'Sabato', 'hours.sun': 'Domenica',
-    'hours.closed': 'Chiuso',
     'hours.time': '12:00–15:00 / 19:00–23:00',
     'hours.address.title': '📍 Indirizzo',
     'hours.address.text': 'Via Cenisio 13, 20154 Milano (MI)',
@@ -163,7 +161,6 @@ const translations = {
     'menu.item6.title': 'Mochi',
     'menu.item6.badge': 'Dessert',
     'menu.item6.desc': 'The perfect ending: soft Japanese mochi in many flavors, from matcha to coconut.',
-    'menu.veg': 'Vegetarian options available on the menu (🌱) >>>',
     'menu.note': '✦ Choose your broth: MISO (original), SOY (spiced & salty) or TANTANMEN (medium spicy) — full in-store menu below ✦',
 
     // Gallery
@@ -193,7 +190,6 @@ const translations = {
     'hours.info.title': '🕐 Opening Hours',
     'hours.mon': 'Monday', 'hours.tue': 'Tuesday', 'hours.wed': 'Wednesday', 'hours.thu': 'Thursday',
     'hours.fri': 'Friday', 'hours.sat': 'Saturday', 'hours.sun': 'Sunday',
-    'hours.closed': 'Closed',
     'hours.time': '12:00–3:00 PM / 7:00–11:00 PM',
     'hours.address.title': '📍 Address',
     'hours.address.text': 'Via Cenisio 13, 20154 Milan (MI), Italy',
